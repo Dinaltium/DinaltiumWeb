@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:600px) {
+    div{
+    height: 200px;
+    width: 200px;
+    }
+}
+
+@font-face {
+    font-family: 'WHITE RABBIT';
+    src: local('WHITE RABBIT');
+}
+@font-face {
+    font-family: 'Dogica';
+    src: url('Dogica');
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    background-color: grey;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "WHITE RABBIT";
+}
+.logo{
+    padding-left: 10px;
+}
+.menus{
+    display: flex;
+}
+.menus a{
+    color: white;
+    padding: 10px;
+    text-decoration:none;
+
+}
+.Coder{
+    padding: 90px;
+    font-size: 50px;
+    padding-top: 110px;
+    word-wrap: break-word;
+    font-family: "Dogica", sans-serif;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    width: 20ch; /* Controls visible width */
+    animation: typing 5s steps(20) infinite, blink 0.75s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20ch;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: black;
+    }
+  }
