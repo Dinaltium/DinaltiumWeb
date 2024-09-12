@@ -53,7 +53,7 @@
     overflow: hidden;
     border-right: 0.15em solid black;
     width: 20ch; /* Controls visible width */
-    animation: typing 5s steps(20) infinite, blink 0.75s step-end infinite alternate;
+    animation: typing 5s steps(20) infinite, blink 0.1s step-end infinite alternate;
   }
   
   @keyframes typing {
@@ -70,7 +70,7 @@
       border-color: transparent;
     }
     to {
-      border-color: black;
+      border-color: transparent;
     }
   }
 .about-me{
