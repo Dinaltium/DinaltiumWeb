@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:600px) {
+    div{
+    height: 200px;
+    width: 200px;
+    }
+}
+
+@font-face {
+    font-family: 'WHITE RABBIT';
+    src: local('WHITE RABBIT');
+}
+@font-face {
+    font-family: 'Dogica';
+    src: url('Dogica');
+}
+:root {
+    --bs-gradient: linear-gradient(110deg, #ed26ff, #000dff, #00b7ff);
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    background-image: var(--bs-gradient);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "WHITE RABBIT";
+}
+.logo{
+    padding-left: 10px;
+}
+.menus{
+    display: flex;
+}
+.menus a{
+    color: white;
+    padding: 10px;
+    text-decoration:none;
+
+}
+.Coder{
+    padding: 90px;
+    font-size: 50px;
+    padding-top: 110px;
+    word-wrap: break-word;
+    font-family: "Dogica", sans-serif;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    width: 20ch; /* Controls visible width */
+    animation: typing 5s steps(20) infinite, blink 0.75s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20ch;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: black;
+    }
+  }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+.projectsRow{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+
+}
+.box{
+    display: inline;
+    height: 200px;
+    width: 200px;
+    background: blanchedalmond;
+    text-align: center;
+    margin: 20px;
+    border-radius: 40px;
+}
+.profile img{
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer{
+    padding: 10px;
+    height: 115px;
+    width: 100vw;
+    background-color: black;
+    color: gold;
+    text-align: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'WHITE RABBIT';
+    font-size: 25px;
+
+}
