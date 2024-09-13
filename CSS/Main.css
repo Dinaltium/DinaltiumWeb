@@ -8,6 +8,9 @@
     width: 200px;
     }
 }
+body{
+    background-color: black;
+}
 
 @font-face {
     font-family: 'WHITE RABBIT';
@@ -17,9 +20,6 @@
     font-family: 'Dogica';
     src: url('Dogica');
 }
-:root {
-    --bs-gradient: linear-gradient(110deg, #ed26ff, #000dff, #00b7ff);
-}
 .navbar{
     height: 60px;
     width: 100vw;
@@ -27,7 +27,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "WHITE RABBIT";
 }
 .logo{
@@ -37,12 +37,13 @@
     display: flex;
 }
 .menus a{
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-decoration:none;
 
 }
 .Coder{
+    color: rgb(255, 255, 255);
     padding: 90px;
     font-size: 50px;
     padding-top: 110px;
@@ -108,6 +109,7 @@
 
 }
 .profile{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
