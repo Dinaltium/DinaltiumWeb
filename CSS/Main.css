@@ -18,7 +18,11 @@ body{
 }
 @font-face {
     font-family: 'Dogica';
-    src: url('Dogica');
+    src: local('Dogica');
+}
+@font-face {
+    font-family: 'Bahnschrift';
+    src: local('Bahnschrift');
 }
 .navbar{
     height: 60px;
@@ -114,6 +118,10 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: Bahnschrift;
+}
+.about-me{
+    font-size: 25px;
 }
 .footer{
     position: fixed;
