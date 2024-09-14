@@ -1,16 +1,20 @@
+/* Body */
+
+
 *{
     margin: 0;
     padding: 0;
 }
-@media (max-width:600px) {
-    div{
-    height: 200px;
-    width: 200px;
-    }
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 body{
     background-color: black;
 }
+
+
+/* Font*/
+
 
 @font-face {
     font-family: 'WHITE RABBIT';
@@ -24,6 +28,10 @@ body{
     font-family: 'Bahnschrift';
     src: local('Bahnschrift');
 }
+
+/* Top Page */
+
+
 .navbar{
     height: 60px;
     width: 100vw;
@@ -46,6 +54,11 @@ body{
     text-decoration:none;
 
 }
+
+
+/*Main Page*/
+
+
 .Coder{
     color: rgb(255, 255, 255);
     padding: 90px;
@@ -78,12 +91,52 @@ body{
       border-color: transparent;
     }
   }
+.word{
+    color: white;
+    text-align: center;
+}
+.l1 {
+    margin-right: 40%;
+    font-size: xx-large;
+}
+.l2 {
+    font-size: 150px;
+}
+
+
+/* About Page */
+
+
 .about-me{
     margin: 50px;
     font-size: 30px;
 }
-.projects{
+.profile{
+    color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Bahnschrift;
+}
+
+.profile img{
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
+
+}
+.about-me{
+    font-size: 25px;
+}
+
+
+/* Projects Page */
+
+
+.projects{
     flex-direction: column;
     align-items: center;
     margin: 10px;
@@ -111,8 +164,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%; /* Adjust as per your needs */
-    margin: 30px;
+    width: 90%;
+    margin: auto;
 }
 .box img{
     object-fit: cover;
@@ -120,6 +173,7 @@ body{
     width: 400px;
     margin: 20px;
     border-radius: 20%;
+    flex-shrink: 0;
 
 }
 .p1{
@@ -132,25 +186,10 @@ body{
     justify-self: flex-start;
 }
 
-.profile img{
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    
 
-}
-.profile{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: Bahnschrift;
-}
-.about-me{
-    font-size: 25px;
-}
+/* End Body*/
+
+
 .footer{
     position: fixed;
     bottom: 0;
@@ -165,16 +204,4 @@ body{
     font-family: 'WHITE RABBIT';
     font-size: 25px;
 
-}
-.word{
-    color: white;
-    padding-left: 230px;
-}
-.l1 {
-    font-size: xx-large;
-}
-.l2 {
-    font-size: 150px;
-    padding-left: 380px;
-    padding-top: 100px;
 }
