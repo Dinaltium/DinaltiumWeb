@@ -91,25 +91,53 @@ body{
 }
 .projectsRow{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
     
 
 }
-.box{
-    display: inline;
-    height: 200px;
-    width: 200px;
-    background: blanchedalmond;
-    text-align: center;
-    margin: 20px;
-    border-radius: 40px;
+.Project-paragraph{
+    color: aliceblue;
+    display: flex;
+    font-size: 40px;
+    padding: 90px;
+    
+
 }
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust as per your needs */
+    margin: 30px;
+}
+.box img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 20%;
+
+}
+.p1{
+    flex-direction: row-reverse;
+    justify-self: flex-start;
+}
+
+.p2{
+    flex-direction: row;
+    justify-self: flex-start;
+}
+
 .profile img{
     padding-top: 20px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    
 
 }
 .profile{
