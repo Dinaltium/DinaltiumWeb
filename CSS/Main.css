@@ -138,3 +138,15 @@ body{
     font-size: 25px;
 
 }
+.word{
+    color: white;
+    padding-left: 230px;
+}
+.l1 {
+    font-size: xx-large;
+}
+.l2 {
+    font-size: 150px;
+    padding-left: 380px;
+    padding-top: 100px;
+}
