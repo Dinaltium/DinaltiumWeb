@@ -161,9 +161,10 @@ main{
     justify-content: space-around;
     align-items: center;
     width: auto;
-    
+    gap: 20px;
 
 }
+
 .Project-paragraph{
     color: aliceblue;
     display: flex;
@@ -177,7 +178,12 @@ main{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: auto;
+    background-color: #1d1d1d;
+    padding: 30px;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px rgba(28, 28, 28, 0.9);
+    margin: 20px 0;
+    
 }
 .box img{
     object-fit: cover;
@@ -198,6 +204,27 @@ main{
     justify-self: flex-start;
 }
 
+@media (max-width: 1100px){
+    .box{
+
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        
+    }
+    .box img{
+        width: 50%;
+        height: auto;
+        max-height: none;;
+    }
+    .Project-paragraph{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
 
 /* End Body*/
 
