@@ -26,12 +26,13 @@ main{
 
 @font-face {
     font-family: 'WHITE RABBIT';
-    src: url(../Assets/Fonts/whitrabt.ttf) format('ttf');
+    src: url('../Assets/Fonts/whitrabt.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Dogica';
-    src: url(../Assets/Fonts/dogica.otf) format('otf');
+    src: url('../Assets/Fonts/dogica.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'Bahnschrift';
     src: local('Bahnschrift');
