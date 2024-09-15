@@ -163,6 +163,7 @@ main{
     width: auto;
     gap: 20px;
 
+
 }
 
 .Project-paragraph{
@@ -205,19 +206,23 @@ main{
 }
 
 @media (max-width: 1100px){
+    .projectsRow
+    {
+        display: flex;
+        
+    }
     .box{
-
-        width: 100%;
         max-width: 100%;
         margin: 20px 0;
         flex-direction: column;
         align-items: center;
         width: 90%;
+        height: 100%;
         
     }
     .box img{
-        width: 50%;
-        height: auto;
+        width: 300px;
+        height: 300px;
         max-height: none;;
     }
     .Project-paragraph{
