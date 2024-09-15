@@ -6,7 +6,7 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -71,7 +71,7 @@ main{
 /*Main Page*/
 
 
-.Coder{
+.Coder {
     color: rgb(255, 255, 255);
     padding: 90px;
     font-size: 50px;
@@ -82,27 +82,36 @@ main{
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid black;
-    width: 20ch; /* Controls visible width */
-    animation: typing 5s steps(20) infinite, blink 0.1s step-end infinite alternate;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
+    width: 20ch; 
+    background: rgba(0, 0, 0, 0.5);
+    --caret: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.Coder::before {
+    content: "";
+    animation: typing 11s steps(20) infinite, blink-caret 0.75s step-end infinite;
+}
+.Coder::after {
+    border-right: 1ch solid var(--caret);
     }
-    to {
-      width: 20ch;
-    }
-  }
-  
-  @keyframes blink {
-    from {
-      border-color: transparent;
-    }
-    to {
-      border-color: transparent;
-    }
-  }
+@keyframes blink-caret {
+    from, to { border-right-color: transparent; }
+    50% { border-right-color: var(--caret); }
+}
+    
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "<"; }
+    2.2791%, 25.0698% { content: "< "; }
+    3.4186%, 23.9302% { content: "< c"; }
+    4.5581%, 22.7907% { content: "< co"; }
+    5.6977%, 21.6512% { content: "< cod"; }
+    6.8372%, 20.5116% { content: "< code"; }
+    7.9767%, 19.3721% { content: "< coder"; }
+    9.1163%, 18.2326% { content: "< coder "; }
+    10.2558%, 17.0930% { content: "< coder >"; }
+}
 .word{
     color: white;
     text-align: center;
@@ -115,6 +124,12 @@ main{
     font-size: 150px;
 }
 
+@media (max-width: 1100px) {
+
+    .word{
+        font-size: 50px;
+    }
+}
 
 /* About Page */
 
@@ -222,14 +237,14 @@ main{
         
     }
     .box img{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         max-height: none;;
     }
     .Project-paragraph{
         text-align: center;
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
