@@ -9,7 +9,7 @@ body{
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 }
 main{
@@ -72,56 +72,57 @@ main{
 
 
 .Coder {
+    display: flex;
     color: rgb(255, 255, 255);
-    padding: 90px;
-    font-size: 50px;
-    padding-top: 110px;
-    word-wrap: break-word;
     font-family: "Dogica", sans-serif;
-    font-size: 2rem;
-    white-space: nowrap;
+    font-size: 20px;
+    padding-top: 400px;
+    vertical-align: bottom;
+    justify-content: center;
+}
+.Coder .dynamic{
+    margin-left: 15px;
+    line-height: 30px;
     overflow: hidden;
-    border-right: 0.15em solid black;
-    width: 20ch; 
-    background: rgba(0, 0, 0, 0.5);
-    --caret: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
-
-.Coder::before {
+.dynamic li{
+    list-style: none;
+    position: relative;
+    color: rgb(91, 176, 255);
+}
+.dynamic li::after{
     content: "";
-    animation: typing 11s steps(20) infinite, blink-caret 0.75s step-end infinite;
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: black;
+    border-left: 10px solid rgb(91, 176, 255);
+    animation: typing 6s steps(26) infinite;
 }
-.Coder::after {
-    border-right: 1ch solid var(--caret);
-    }
-@keyframes blink-caret {
-    from, to { border-right-color: transparent; }
-    50% { border-right-color: var(--caret); }
-}
-    
 @keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "<"; }
-    2.2791%, 25.0698% { content: "< "; }
-    3.4186%, 23.9302% { content: "< c"; }
-    4.5581%, 22.7907% { content: "< co"; }
-    5.6977%, 21.6512% { content: "< cod"; }
-    6.8372%, 20.5116% { content: "< code"; }
-    7.9767%, 19.3721% { content: "< coder"; }
-    9.1163%, 18.2326% { content: "< coder "; }
-    10.2558%, 17.0930% { content: "< coder >"; }
+    40%,
+    60%{
+        left: calc(100%);
+    }
+    100%{
+        left: 0;
+    }
 }
 .word{
+
     color: white;
-    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+
 }
 .l1 {
-    margin-right: 40%;
     font-size: xx-large;
+    padding: 40px;
 }
 .l2 {
     font-size: 150px;
+    text-align: center;
 }
 
 @media (max-width: 1100px) {
