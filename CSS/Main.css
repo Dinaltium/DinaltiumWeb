@@ -38,7 +38,7 @@ main{
     src: local('Bahnschrift');
 }
 
-/* Top Page */
+/* Nav Bar */
 
 
 .navbar{
@@ -52,6 +52,7 @@ main{
     font-family: "WHITE RABBIT";
 }
 .logo{
+    padding-top: 10px;
     padding-left: 10px;
 }
 .menus{
@@ -112,17 +113,21 @@ main{
 .word{
 
     color: white;
-    justify-content: center;
-    vertical-align: middle;
+
 
 }
 .l1 {
+    padding-left: 300px;
     font-size: xx-large;
-    padding: 40px;
 }
 .l2 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 150px;
     text-align: center;
+    
 }
 
 @media (max-width: 1100px) {
