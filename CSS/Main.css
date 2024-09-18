@@ -73,16 +73,14 @@ main{
 
 
 .Coder {
-    display: flex;
     color: rgb(255, 255, 255);
     font-family: "Dogica", sans-serif;
     font-size: 20px;
-    padding-top: 400px;
-    vertical-align: bottom;
-    justify-content: center;
 }
 .Coder .dynamic{
-    margin-left: 15px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
     line-height: 30px;
     overflow: hidden;
 }
@@ -113,20 +111,20 @@ main{
 .word{
 
     color: white;
-
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 .l1 {
-    padding-left: 300px;
     font-size: xx-large;
 }
 .l2 {
     height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     font-size: 150px;
-    text-align: center;
+    /* text-align: center; */
     
 }
 
