@@ -146,6 +146,26 @@ main{
         left: 0;
     }
 }
+.word{
+
+    color: white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.l1 {
+    font-size: xx-large;
+    
+}
+.l2 {
+    height: 50vh;
+  
+    font-size: 150px;
+    /* text-align: center; */
+    
+}
 
 @media (max-width: 1300px) {
 
@@ -285,8 +305,4 @@ footer {
     text-align: center;
     font-family: 'WHITE RABBIT';
     font-size: 25px;
-}
-
-@media (max-width: 760px){
-
 }
