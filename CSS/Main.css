@@ -106,7 +106,7 @@ main{
     font-family: "Dogica", sans-serif;
     font-size: 20px;
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -145,26 +145,6 @@ main{
     100% {
         left: 0;
     }
-}
-.word{
-
-    color: white;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-.l1 {
-    font-size: xx-large;
-    
-}
-.l2 {
-    height: 50vh;
-  
-    font-size: 150px;
-    /* text-align: center; */
-    
 }
 
 @media (max-width: 1300px) {
