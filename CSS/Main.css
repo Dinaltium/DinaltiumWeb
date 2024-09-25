@@ -158,34 +158,6 @@ main{
     }
 }
 
-/* About Page */
-
-
-.about-me{
-    margin: 50px;
-    font-size: 30px;
-}
-.profile{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: Bahnschrift;
-}
-
-.profile img{
-    padding-top: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    
-
-}
-.about-me{
-    font-size: 25px;
-}
-
 
 /* Projects Page */
 
@@ -216,6 +188,9 @@ main{
     padding: 10px;
     
 
+}
+.Project-paragraph .Projecy-header{
+    flex-direction: row ;
 }
 .box {
     display: flex;
@@ -274,6 +249,36 @@ main{
         font-size: 15px;
     }
 }
+
+
+/* About Page */
+
+
+.about-me{
+    margin: 50px;
+    font-size: 30px;
+}
+.profile{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Bahnschrift;
+}
+
+.profile img{
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
+
+}
+.about-me{
+    font-size: 25px;
+}
+
 
 /* End Body*/
 
